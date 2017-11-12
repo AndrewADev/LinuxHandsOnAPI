@@ -9,7 +9,7 @@ def warm_up():
 
 @app.route('/Tasks/2')
 def install_script():
-    api_key = request.headers.get('X-API_KEY')
+    api_key = request.headers.get('X-APIKEY')
     if api_key != 'HMB-ROCKS' and api_key != 'HMBROCKS':
         return 'Unauthorized\n', 403
 
