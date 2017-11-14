@@ -15,3 +15,9 @@ def install_script():
 
     fake_install = open("sample_install_script.sh", "r")
     return fake_install.read()
+
+
+@app.route('/Tasks/3')
+def flaky_script():
+    flaky = open("long_running_script.sh", "r")
+    return flaky.read()
